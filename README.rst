@@ -1,6 +1,7 @@
 ==============================================
 FIND 
 ==============================================
+
 The Framework for Internal Navigation and Discovery (FIND) allows you to use your (Android) smartphone or WiFi-enabled computer (laptop or Raspberry Pi or etc.) to determine your position within your home or office. You can easily use this system in place of motion sensors as its resolution will allow your phone to distinguish whether you are in the living room, the kitchen or the bedroom, etc. The position information can then be used in a variety of ways including home automation, way-finding, or tracking!
 
 ==============================================
@@ -11,13 +12,13 @@ FIND installation  & configuration steps:
     # apt-get update && apt-get upgrade
 
 Docker
-----------
+------
 Install docker::
 
     # apt-get install docker.io
 
 FIND Server
-----------------
+-----------
 ::
 
     # git clone https://github.com/schollz/find.git && cd find
@@ -30,7 +31,7 @@ Dashboard on http://SERVER_IP:18003/dashboard/YOUR_GROUP_NAME
 
 
 ./find
----------
+------
 ::
 
     find (version  (devdevde), built )
@@ -70,6 +71,5 @@ Example of usage:
 ::
     TO-DO
 
-============================================
 FIND Client (Raspberry Pi 2 Model B)
-============================================
+------------------------------------
