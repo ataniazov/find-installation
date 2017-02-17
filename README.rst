@@ -17,7 +17,7 @@ FIND Server
 
     # git clone https://github.com/schollz/find.git && cd find
     # docker build -t finddocker .
-    # docker run --name find --restart=always -p 18003:8003 -p 11883:1883 -d -v /root/find/data:/data finddocker ./find -data /data
+    # docker run --name find --restart=always -p 18003:8003 -p 11883:1883 -d -v $HOME/find/data:/data finddocker ./find -data /data
     # reboot
     
 On your browser go to http://SERVER_IP:18003
@@ -64,10 +64,7 @@ Example of usage:
 -----------------
 ::
 
-    http://<docker-address>:8080/convert?auth=arachnys-weaver&url=http://blog.arachnys.com/
-    $ curl http://dockerhost:8080/convert\?auth\=arachnys-weaver\&url\=http://blog.arachnys.com/ |> out.pdf
-
 
 ============================================
-Analyzing with SonarQube Scanner for Jenkins
+FIND Client (Raspberry Pi 2 Model B)
 ============================================
