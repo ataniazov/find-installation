@@ -24,30 +24,42 @@ On your browser go to http://SERVER_IP:18003
 Dashboard on http://SERVER_IP:18003/dashboard/YOUR_GROUP_NAME
 
 
-athenapdf
+./find
 ---------
 ::
 
-    Usage: athenapdf [options] <URI> [output]
-    convert HTML to PDF via stdin or a local / remote URI
+    find (version  (devdevde), built )
+    Example: 'findserver yourserver.com'
+    Example: 'findserver -p :8080 localhost:8080'
+    Example (mosquitto): 'findserver -mqtt 127.0.0.1:1883 -mqttadmin admin -mqttadminpass somepass -mosquitto `pgrep mosquitto`
     Options:
-
-    -h, --help                   output usage information
-    -V, --version                output the version number
-    --debug                      show GUI
-    -T, --timeout <seconds>      seconds before timing out (default: 120)
-    -D, --delay <milliseconds>   milliseconds delay before saving (default: 200)
-    -\P, --pagesize <size>        page size of the generated PDF (default: A4)
-    -M, --margins <marginsType>  margins to use when generating the PDF (default: standard)
-    -Z --zoom <factor>           zoom factor for higher scale rendering (default: 1 - represents 100%)
-    -S, --stdout                 write conversion to stdout
-    -A, --aggressive             aggressive mode / runs dom-distiller
-    -B, --bypass                 bypasses paywalls on digital publications (experimental feature)
-    --proxy <url>                use proxy to load remote HTML
-    --no-portrait                render in landscape
-    --no-background              omit CSS backgrounds
-    --no-cache                   disables caching
-
+        -crt string
+            location of ssl crt
+        -data string
+            path to data folder
+        -dump string
+          	group to dump to folder
+        -filter string
+          	JSON file for macs to filter
+        -key string
+          	location of ssl key
+        -message string
+          	message to display to all users
+        -mosquitto pgrep mosquitto
+          	mosquitto PID (pgrep mosquitto)
+        -mqtt string
+          	ADDRESS:PORT of mosquitto server
+        -mqttadmin string
+          	admin to read all messages
+        -mqttadminpass string
+          	admin to read all messages
+        -p string
+          	port to bind (default ":8003")
+        -rf string
+          	port for random forests calculations
+        -s string
+          	unix socket
+            
 Example of usage:
 -----------------
 ::
