@@ -1,4 +1,9 @@
 ==============================================
+FIND 
+==============================================
+The Framework for Internal Navigation and Discovery (FIND) allows you to use your (Android) smartphone or WiFi-enabled computer (laptop or Raspberry Pi or etc.) to determine your position within your home or office. You can easily use this system in place of motion sensors as its resolution will allow your phone to distinguish whether you are in the living room, the kitchen or the bedroom, etc. The position information can then be used in a variety of ways including home automation, way-finding, or tracking!
+
+==============================================
 FIND installation  & configuration steps:
 ==============================================
 ::
