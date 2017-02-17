@@ -5,14 +5,13 @@ FIND installation  & configuration steps:
 
     # apt-get update && apt-get upgrade
 
-
 Docker
 ----------
 Install docker::
 
     # apt-get install docker.io
 
-SonarQube Server
+FIND Server
 ----------------
 ::
 
