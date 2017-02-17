@@ -30,7 +30,7 @@ On your browser go to http://SERVER_IP:18003
 Dashboard on http://SERVER_IP:18003/dashboard/YOUR_GROUP_NAME
 
 
-./find
+./find -help
 ------
 ::
 
@@ -77,6 +77,7 @@ FIND Client (Raspberry Pi 2 Model B)
 ::
 
     $ sudo raspi-config
+    $ sudo apt-get update && apt-get upgrade
     $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
     $ mkdir find
     $ cd find/
@@ -86,3 +87,38 @@ FIND Client (Raspberry Pi 2 Model B)
     $ sudo ./findclient -s "SERVER_IP" -g YOUR_GROUP -u USER_NAME -l LOCATION_NAME -e -c PACKETS_COUNT
     $ sudo ./findclient -s "SERVER_IP" -g YOUR_GROUP -u USER_NAME
     
+./findclient --help
+-------------------
+::
+
+NAME:
+   findclient - client for sending WiFi fingerprints to a FIND server
+
+USAGE:
+   findclient [global options] command [command options] [arguments...]
+   
+VERSION:
+   0.5 a3d23a9
+   
+COMMANDS:
+     help, h  Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   --server value, -s value     server to connect (default: "https://ml.internalpositioning.com")
+   --group value, -g value      group name (default: "group")
+   --user value, -u value       user name (default: "user")
+   --location value, -l value   location (needed for '--learn') (default: "location")
+   --continue value, -c value   number of times to run (default: 3)
+   --learn, -e                  need to set if you want to learn location
+   --nodebug, -d                turns off debugging
+   --iwlist, -w                 switch to iwlist if iw fails
+   --interface value, -i value  WiFi interface to use for scaning (default: "wlan0")
+   --help, -h                   show help
+   --version, -v                print the version
+   
+2017/02/17 10:21:40 You can see fewer messages by adding --nodebug
+2017/02/17 10:21:40 User: 
+2017/02/17 10:21:40 Group: 
+2017/02/17 10:21:40 Server: 
+2017/02/17 10:21:40 Running 0 times (you can run more using '-c SOMENUM'). Please wait...
+
