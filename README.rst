@@ -123,6 +123,6 @@ Example of usage:
 -----------------
 ::
 
-    $ sudo ./findclient -s "SERVER_IP" -g YOUR_GROUP -u USER_NAME -l LOCATION_NAME -e
+    $ sudo ./findclient -s "SERVER_IP" -g YOUR_GROUP -u USER_NAME -l LOCATION_NAME -e       (for learning)
+    $ sudo ./findclient -s "SERVER_IP" -g YOUR_GROUP -u USER_NAME                           (for tracking)
     $ sudo ./findclient -s "SERVER_IP" -g YOUR_GROUP -u USER_NAME -l LOCATION_NAME -e -c PACKETS_COUNT
-    $ sudo ./findclient -s "SERVER_IP" -g YOUR_GROUP -u USER_NAME
