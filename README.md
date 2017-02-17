@@ -1,2 +1,0 @@
-# find-installation
-find-installation
