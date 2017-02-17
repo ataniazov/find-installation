@@ -26,6 +26,7 @@ FIND Server
     # reboot
     
 On your browser go to http://SERVER_IP:18003
+
 Dashboard on http://SERVER_IP:18003/dashboard/YOUR_GROUP_NAME
 
 
