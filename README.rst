@@ -75,8 +75,13 @@ Example of usage:
 FIND Client (Raspberry Pi 2 Model B)
 ------------------------------------
 ::
+
     $ sudo raspi-config
     $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+    $ mkdir find
+    $ cd find/
+    $ wget https://github.com/schollz/find/releases/download/v0.5/findclient_0.5_linux_arm.zip
+    $ unzip findclient_0.5_linux_arm.zip
     $ sudo ./findclient -s "SERVER_IP" -g YOUR_GROUP -u USER_NAME -l LOCATION_NAME -e
     $ sudo ./findclient -s "SERVER_IP" -g YOUR_GROUP -u USER_NAME -l LOCATION_NAME -e -c PACKETS_COUNT
     $ sudo ./findclient -s "SERVER_IP" -g YOUR_GROUP -u USER_NAME
