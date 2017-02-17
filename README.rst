@@ -44,27 +44,27 @@ Dashboard on http://SERVER_IP:18003/dashboard/YOUR_GROUP_NAME
         -data string
             path to data folder
         -dump string
-          	group to dump to folder
+            group to dump to folder
         -filter string
-          	JSON file for macs to filter
+            JSON file for macs to filter
         -key string
-          	location of ssl key
+            location of ssl key
         -message string
-          	message to display to all users
+            message to display to all users
         -mosquitto pgrep mosquitto
-          	mosquitto PID (pgrep mosquitto)
+            mosquitto PID (pgrep mosquitto)
         -mqtt string
-          	ADDRESS:PORT of mosquitto server
+            ADDRESS:PORT of mosquitto server
         -mqttadmin string
-          	admin to read all messages
+            admin to read all messages
         -mqttadminpass string
-          	admin to read all messages
+            admin to read all messages
         -p string
-          	port to bind (default ":8003")
+            port to bind (default ":8003")
         -rf string
-          	port for random forests calculations
+            port for random forests calculations
         -s string
-          	unix socket
+            unix socket
             
 Example of usage:
 -----------------
