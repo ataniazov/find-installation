@@ -63,7 +63,7 @@ Dashboard on http://SERVER_IP:18003/dashboard/YOUR_GROUP_NAME
 Example of usage:
 -----------------
 ::
-
+    TO-DO
 
 ============================================
 FIND Client (Raspberry Pi 2 Model B)
